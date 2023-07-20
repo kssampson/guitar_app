@@ -1,0 +1,47 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "type": "text",
+      "version": 655,
+      "versionNonce": 60767628,
+      "isDeleted": false,
+      "id": "ewePzwl4AWPudEEPkIjLt",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 293.1672668457031,
+      "y": 302.8743896484375,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 307.11968994140625,
+      "height": 775,
+      "seed": 742557477,
+      "groupIds": [],
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1689696425189,
+      "link": null,
+      "locked": false,
+      "fontSize": 20,
+      "fontFamily": 1,
+      "text": "guitars\n\n\ntuner types - string\n    machine\n    pegs\n   \nbindings\n    bone, plastic\n\n\nmanufacturers/builders - string\n\nimage\n\nmodel\n\n\nscale length\nnut width\nguitar height\n\nback and sides wood \ntop wood\n\nregion - foreign key\n\n\n\n\n",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "guitars\n\n\ntuner types - string\n    machine\n    pegs\n   \nbindings\n    bone, plastic\n\n\nmanufacturers/builders - string\n\nimage\n\nmodel\n\n\nscale length\nnut width\nguitar height\n\nback and sides wood \ntop wood\n\nregion - foreign key\n\n\n\n\n",
+      "lineHeight": 1.25,
+      "baseline": 768
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
