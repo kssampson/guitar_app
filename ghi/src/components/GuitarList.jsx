@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { NavLink} from 'react-router-dom'
 
 function GuitarList() {
 
@@ -27,9 +28,12 @@ function GuitarList() {
             }
             {guitars.map((guitar, index) => {
                 return (<div key={index}>
-                    <p>{guitar.model_name}</p>
+                    <NavLink to={`/guitars/${guitar.id}`}>
+                        <p>{guitar.model_name}</p>
+                    </NavLink>
                     <p>{guitar.region}</p>
                     <p>{guitar.manufacturer}</p>
+                    <p>{guitar.id}</p>
                 </div>)
             })}
         </div>
