@@ -5,6 +5,7 @@ from common.json import ModelEncoder
 class GuitarEncoder(ModelEncoder):
     model = Guitar
     properties = [
+        "id",
         "tuner_type",
         "bindings",
         "manufacturer",
