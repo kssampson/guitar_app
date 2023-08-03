@@ -76,9 +76,12 @@ function GuitarDetail() {
             <p>{guitar.region}</p>
             <p>{guitar.manufacturer}</p>
             <NavLink to={"/guitars/"}>
-                <p>Click Here to Go Back</p>
+                <button>Back</button>
             </NavLink>
-            <button onClick={handleDelete}>Click Here to Delete</button>
+            <NavLink to={`/guitars/${guitar.id}/update`}>
+                 <button>Edit</button>
+            </NavLink>
+            <button onClick={handleDelete}>Delete</button>
         </div>
     )
 }

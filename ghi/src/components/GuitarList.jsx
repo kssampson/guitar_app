@@ -29,7 +29,7 @@ function GuitarList() {
             {guitars.map((guitar, index) => {
                 return (<div key={index}>
                     <NavLink to={`/guitars/${guitar.id}`}>
-                        <p>{guitar.model_name}</p>
+                        <p><b>{guitar.model_name}</b></p>
                     </NavLink>
                     <p>{guitar.region}</p>
                     <p>{guitar.manufacturer}</p>

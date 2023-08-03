@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
+import {useParams, NavLink} from "react-router-dom"
 
-function CreateGuitar() {
+function UpdateGuitar() {
 
     const [guitar, setGuitar] = useState({
       "tuner_type": "",
@@ -16,6 +17,22 @@ function CreateGuitar() {
       "top_wood": "",
     });
 
+    const {guitar_id} = useParams();
+
+    const getGuitar = async() =>{
+      const response = await fetch(`http://localhost:8000/guitars/${guitar_id}/`);
+      const guitarData = await response.json();
+        console.log(guitarData)
+
+        setGuitar(guitarData.guitar)
+    }
+
+    useEffect(() => {
+        getGuitar();
+        console.log(guitar)
+        console.log(guitar_id)
+    },[]);
+
     const handleChange = (event) => {
       setGuitar({...guitar, [event.target.name]: event.target.value})
     }
@@ -28,23 +45,20 @@ function CreateGuitar() {
       data["overall_height"] = parseInt(data["overall_height"], 10);
       console.log(data)
 
-      const guitarUrl = "http://localhost:8000/guitars/";
+      const guitarUrl = `http://localhost:8000/guitars/${guitar_id}/`;
       const fetchConfig = {
-        method: "POST",
+        method: "PUT",
         body: JSON.stringify(data),
         headers: {
           "Content-Type": "application/json",
         }
       }
       const response = await fetch(guitarUrl, fetchConfig);
-
       if (response.ok) {
-        const responseData = await response.json();
-        const guitar_id = responseData.id;
         window.location.href = `http://localhost:5173/guitars/${guitar_id}`;
-        alert('Guitar creation successful!')
+        alert('Guitar update successful!')
       } else {
-        alert('There was an error in creating your guitar!');
+        alert('There was an error in updating your guitar!');
       }
     }
 
@@ -167,4 +181,4 @@ function CreateGuitar() {
     )
 }
 
-export default CreateGuitar
+export default UpdateGuitar
