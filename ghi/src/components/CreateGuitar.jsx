@@ -50,7 +50,7 @@ function CreateGuitar() {
 
 
     return (
-        <div>
+        <div className="appPage">
             <label>Tuner Type</label>
             <input
               type="text"

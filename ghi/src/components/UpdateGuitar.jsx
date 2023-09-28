@@ -17,7 +17,7 @@ function UpdateGuitar() {
       "top_wood": "",
     });
 
-    const {guitar_id} = useParams();
+    const {guitar_id} = useParams(); // 
 
     const getGuitar = async() =>{
       const response = await fetch(`http://localhost:8000/guitars/${guitar_id}/`);
@@ -64,7 +64,7 @@ function UpdateGuitar() {
 
 
     return (
-        <div>
+        <div className="appPage">
             <label>Tuner Type</label>
             <input
               type="text"

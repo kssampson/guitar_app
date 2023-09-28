@@ -1,42 +1,102 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: left;
+ }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 318px;
+  min-height: 667px;
+}
+
+.main_title {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 375px) {
+  .navBar {
+    background-color: red;
+    width: 100%;
+    height: 8vh;
+    margin: 0 0 0 0;
+    display: flex;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navBarLink {
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-top: 2.3vh;
+  }
+
+  .navList {
+    width: 25%;
+    height: 8vh;
+    vertical-align: middle;
+  }
+
+  .navBrand {
+    width: 50%;
+    height: 8vh;
+  }
+
+  .appPage {
+    margin-top: 8vh;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navBarBrandLink {
+    color: white;
+    text-align: center;
+    margin-top: 1.2vh;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.showGuitarNav {
+  background-color: rgba(0, 0, 0, 0.474);
+  width: 100%;
+  height: 100vh;
+  margin: 0 0 0 0;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card {
-  padding: 2em;
+.hide {
+  display: none;
 }
 
-.read-the-docs {
-  color: #888;
+.navBarLink2 {
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-top: 2.3vh;
+}
+
+.topLeft {
+  top: 0;
+  margin-left: 3vw;
+  color: black;
+  z-index: 1000;
 }

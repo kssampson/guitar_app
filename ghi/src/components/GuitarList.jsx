@@ -20,7 +20,7 @@ function GuitarList() {
 
 
     return (
-        <div>
+        <div className="appPage">
             <p>Hello</p>
             {guitars.length > 0 ?
             <p>The number of guitars we have is: {guitars.length}</p> :

@@ -6,6 +6,7 @@ import GuitarDetail from "./components/GuitarDetail"
 import CreateGuitar from "./components/CreateGuitar"
 import UpdateGuitar from "./components/UpdateGuitar"
 import QuickNav from "./components/QuickNav"
+import "./App.css"
 // import NavBar from "./components/NavBar"
 
 
